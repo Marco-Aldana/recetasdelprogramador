@@ -17,7 +17,7 @@ interface multiActionAreaCardProps {
 export default function MultiActionAreaCard(props: multiActionAreaCardProps) {
   return (
     <Card sx={{ maxWidth: 345 }}>
-      <Link href={props.url}>
+      <Link href={props.url} passHref>
         <CardActionArea>
           <CardMedia
             component="img"

@@ -13,7 +13,7 @@ const MainMenuList = (props: mainMenuListProps) => {
     return (
         <List>
             {props.items.map((props) => (
-                <Link key={props.name} href={props.URL}>
+                <Link key={props.name} href={props.URL} passHref>
                     <ListItemButton title={props.name}
                         key={props.name}
                         sx={{ minHeight: 48, justifyContent: open ? 'initial' : 'center', px: 2.5, }}

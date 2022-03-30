@@ -29,14 +29,14 @@ const ProductsFilter: NextPage = () => {
             alignItems="center"
             columnSpacing={4}>
             <Grid item>
-              <Link href="/posts/crear">
+              <Link href="/posts/crear" passHref>
                 <Button variant="contained" startIcon={<AddCircleOutlineIcon />}>
                   Crear Post
                 </Button>
               </Link>
             </Grid>
             <Grid item >
-              <Link href="/posts/first-post">
+              <Link href="/posts/first-post" passHref>
               <Button variant="contained" startIcon={<EditIcon />}>
                   Editar Post
                 </Button>
