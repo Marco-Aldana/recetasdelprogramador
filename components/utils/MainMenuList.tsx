@@ -13,7 +13,8 @@ const MainMenuList = (props: mainMenuListProps) => {
     return (
         <List>
             {props.items.map((props) => (
-                <Link key={props.name} href={props.URL} passHref>
+                <Link key={props.name} href={props.URL}>
+                    <a target={props.newTab ? "_blank" : "_self"} href={props.URL} rel="noopener noreferrer">
                     <ListItemButton title={props.name}
                         key={props.name}
                         sx={{ minHeight: 48, justifyContent: open ? 'initial' : 'center', px: 2.5, }}
@@ -23,6 +24,7 @@ const MainMenuList = (props: mainMenuListProps) => {
                         </ListItemIcon>
                         <ListItemText primary={props.name} sx={{ opacity: open ? 1 : 0 }} />
                     </ListItemButton>
+                    </a>
                 </Link>
             ))}
         </List>

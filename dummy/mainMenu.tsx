@@ -11,11 +11,13 @@ const mainMenu: menuItemProps[] = [
         name: 'Inicio',
         URL: '/',
         icon: <HomeIcon />,
+        newTab: false
     },
     {
         name: 'Cursos',
         URL: '/cursos',
         icon: <SchoolIcon />,
+        newTab: false
     },
 ];
 
