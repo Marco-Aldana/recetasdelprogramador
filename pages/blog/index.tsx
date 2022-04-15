@@ -12,7 +12,7 @@ const Contacto: NextPage = () => {
   alignItems="center">
         <Grid item>
         <h1 className={styles.title}>
-          Bienvenido a la seccion de About
+          Bienvenido a la seccion de Blog
         </h1>
         </Grid>
         <Grid item>
