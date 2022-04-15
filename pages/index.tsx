@@ -17,13 +17,13 @@ const Home: NextPage = () => {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <h1 className={styles.title}>
-          ¡Bienvenido Programador!
+          ¡Bienvenido!
         </h1>
-        <Grid container my={4} justifyContent='center' alignItems="center">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/QTDPOxnfRaI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        <Grid container my={5} justifyContent='center' alignItems="center" >
+          <iframe style={{width:'60vw', height:'33.75vw'}}  src="https://www.youtube.com/embed/QTDPOxnfRaI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </Grid>
         <p className={styles.subtitle}>¿Que quieres aprender hoy?</p>
-        <Grid container spacing={4} justifyContent='center' alignItems="center">
+        <Grid container spacing={4}  justifyContent='center' alignItems="stretch">
           {coursesCards.map((item) => (
             <Grid item key={item.nombre}>
               <MultiActionAreaCard nombre={item.nombre} descripcion={item.descripcion} imagen={item.imagen} url={item.url} documentacion={item.documentacion} />
